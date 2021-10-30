@@ -1,15 +1,5 @@
-import Dashboard from "./components/Dashboard";
-import Sidebar from "./components/Sidebar";
-
-import "./scss/style.scss";
-
 function App() {
-  return (
-    <div className="app">
-      <Sidebar />
-      <Dashboard />
-    </div>
-  );
+  return <div className="app"></div>;
 }
 
 export default App;
