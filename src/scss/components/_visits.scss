@@ -1,0 +1,61 @@
+@mixin getStoreVisitsStyles() {
+  .storeVisits {
+    height: 100%;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    @include getTytleStyles();
+    .analytics {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .icon {
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+        background-color: #f9414442;
+        color: #f94144;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .title {
+          span {
+            color: #f94144;
+            font-weight: 900;
+          }
+        }
+        svg {
+          color: #f94144;
+          font-size: 2rem;
+        }
+      }
+    }
+    .progress__bars {
+      margin-top: 2rem;
+      .progress__bar {
+        margin-bottom: 1rem;
+        .title {
+          display: flex;
+          justify-content: space-between;
+        }
+        progress {
+          width: 100%;
+          height: 0.5rem;
+          -webkit-appearance: none;
+          &::-webkit-progress-bar {
+            border-radius: 1rem;
+            background-color: #f9414449;
+          }
+          &::-webkit-progress-value {
+            border-radius: 1rem;
+            background-color: #f94144;
+          }
+        }
+      }
+    }
+  }
+}

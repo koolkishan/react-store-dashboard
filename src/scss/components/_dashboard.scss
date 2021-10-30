@@ -1,0 +1,23 @@
+.dashboard {
+  margin-left: 15rem;
+  padding: 2rem;
+  height: 100%;
+  color: white;
+  @include getNavbarStyles();
+  .grid {
+    margin-top: 3rem;
+    height: 100%;
+    .one {
+      margin: 2rem 0;
+      @include getMileStonesStyles();
+    }
+    .two {
+      height: 70%;
+      display: grid;
+      grid-template-columns: 0.6fr 1fr;
+      gap: 1rem;
+      @include getRevenueStyles();
+      @include getStoreVisitsStyles();
+    }
+  }
+}
